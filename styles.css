@@ -99,6 +99,18 @@ body {
     padding: 0;
 }
 
+/* Remove margin and padding between the logo and title */
+.logo-container img {
+    margin: 0 auto;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+
 /* Star animation */
 @keyframes animStar {
     from { transform: translateY(0px); }

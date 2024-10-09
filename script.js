@@ -45,3 +45,14 @@ function generateStars(count, size) {
 generateStars(700, '');
 generateStars(200, '2');
 generateStars(100, '3');
+
+// Add this function to your existing JavaScript
+function closeMenuOnResize() {
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (window.innerWidth >= 768 && !mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.add('hidden');
+    }
+}
+
+// Add this event listener
+window.addEventListener('resize', closeMenuOnResize);
